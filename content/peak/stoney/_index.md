@@ -2,7 +2,7 @@
 title: "Stoney"
 date: 2020-09-06T12:48:07+01:00
 type: area
-draft: true
+draft: false
 latlong:
 description:
 weight:

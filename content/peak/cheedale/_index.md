@@ -1,7 +1,7 @@
 ---
 title: "Cheedale"
 date: 2020-09-06T14:32:54+01:00
-draft: true
+draft: false
 type: area
 latlong:
 description:

@@ -2,7 +2,7 @@
 title: "Peak District"
 date: 2020-09-06T13:14:33+01:00
 type: region
-draft: true
+draft: false
 latlong:
 description:
 weight: 2
