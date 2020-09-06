@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://sportclimbs.netlify.app/"
 languageCode = "en-us"
 title = "Sport Climbs Hugo Test 1"
 
