@@ -1,0 +1,19 @@
+
+{{ define "main" }}
+    
+
+    <div class="content">
+    <h1>{{ .Title }}</h1>
+    <time>{{ .Date.Format "Mon 02 Jan 06" }}</time>
+
+    {{ .Content }}
+    </div>
+
+    <ul class="craglist">
+        {{ range (where .Site.Pages "Type" "section") }}
+
+        <li><a href="{{ .Permalink }}">{{.Title}}</a></li>
+      {{ end }}
+    </ul>
+
+{{ end }}

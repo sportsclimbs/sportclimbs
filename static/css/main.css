@@ -1,0 +1,84 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --yellow: #F9D570;
+    --white: #F2F2E8;
+    --red: #A53131;
+    --black: #222;
+    --blue: #2E81D3;
+}
+body {
+    font-family: 'segoe ui', sans-serif;
+    background-color: var(--yellow);
+}
+
+.container {
+    background-color: var(--white);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container > * {
+    padding: 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1, h2, h3 {
+    color: var(--red);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+header {
+    border-bottom: 1px solid #ccc;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+a, a:link, a:visited {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--blue);
+}
+a[href="#"] {
+    color: red;
+}
+a.nav-item {
+    padding: 0.53em;
+    border-radius: 12px;
+    display: block;
+    text-decoration: none;
+}
+a.nav-item.active {
+    border: solid 3px red;
+}
+
+/* ---------- FOOTER ============ */
+
+footer {
+    border-top: 1px solid #ccc;
+}
+
+footer .tech ul {
+    display: flex;
+    justify-content: space-between;
+}

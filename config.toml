@@ -1,0 +1,5 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Sport Climbs Hugo Test 1"
+
+sectionPagesMenu = "main"
