@@ -1,0 +1,19 @@
+---
+label: Page template
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: latlong
+  label: latlong
+- type: text
+  name: description
+  label: description
+- type: text
+  name: weight
+  label: weight
