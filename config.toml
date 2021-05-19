@@ -1,5 +1,11 @@
 baseURL = "https://sportclimbs.netlify.app/"
 languageCode = "en-us"
-title = "Sport Climbs Hugo Test 1"
+title = "SportClimbs"
 
 sectionPagesMenu = "main"
+
+[related]
+    [related.indices]
+      name = "nearby" # The name of the indice, same as Front Matter's .Param key.
+      weight = 1 # We don't really need this, but omitting it would disable the indice.
+      includeNewer = true # Here our relationship is timeless! This prevents Hugo from ignoring newer posts.

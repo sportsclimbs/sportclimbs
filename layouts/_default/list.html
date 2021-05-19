@@ -5,26 +5,5 @@
     {{ .Content }}
 </div>
 
-<div class="sidebar">
-    <ul class="craglist">
-        {{ range .Pages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
-
-        {{ end }}
-    </ul>
-
-    <hr>
-
-    {{ range .Sections.Reverse }}
-    <p>{{ .Title }}</p>
-        <ul>
-            {{ range .Pages }}
-            <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
-            {{ end }}
-        </ul>
-
-    {{ end }}
-
-
-</div>
+{{ partial "list-sidebar" . }}
 {{ end }}

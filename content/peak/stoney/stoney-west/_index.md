@@ -2,8 +2,11 @@
 title: "Stoney West"
 date: 2020-09-06T05:51:12+01:00
 draft: false
+layout: crag
+longlat: [-1.6741091, 53.2785901]
+map_label_text: Parking
+nearby: ["Horseshoe Quarry", "Darlton Quarry", "Darlton 2", "Horsethief Quarry"]
 ---
-
 
 ## Introduction:
 

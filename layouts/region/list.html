@@ -10,15 +10,6 @@
 
 </div>
 
+{{ partial "list-sidebar" . }}
 
-
-<div class="sidebar">
-    <ul class="craglist">
-        {{ range .Pages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
-
-        {{ end }}
-    </ul>
-
-</div>
 {{ end }}

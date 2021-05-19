@@ -2,13 +2,17 @@
 title: "Darlton 2"
 date: 2020-09-06T13:34:57+01:00
 draft: false
-type: 
-latlong:
-description:
+type: crag
+longlat: 
+- -1.681767
+- 53.278148
+map_label_text: Parking
+description: Darlton 2 is also known as Hidden Quarry or John Allen's Wall.
 weight:
+layout: crag
 ---
 
-Introduction:
+## Introduction:
 
 Also known as Hidden Quarry this is another new quarry with relatively easy access and lots of new routes. There are some still some projects marked so please respect these.
 Approaches:

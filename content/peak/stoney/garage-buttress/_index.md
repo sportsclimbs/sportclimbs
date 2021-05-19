@@ -2,8 +2,8 @@
 title: "Garage Buttress"
 date: 2020-09-06T05:50:46+01:00
 draft: false
+type: crag
 ---
-
 
 ## Character
 
@@ -18,4 +18,3 @@ The crag faces south and gets the most of the sun on a sunny day although belayi
 When heading westwards on the A623 pass through the village of Stoney Middleton, past the Little India cafe on the right. Just past this on the left side of the road is a good parking area. Walk up the Dale and Garage Buttress is the first accessible cliff, about 150m on the right.
 Garage Buttress
 Stoney Middleton.
-

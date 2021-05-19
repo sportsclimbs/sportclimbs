@@ -1,0 +1,29 @@
+
+<div class="sidebar">
+    <ul>
+        <li><a href="../index.html">{{ .CurrentSection.Title}}</a></li>
+        {{ $currentPage := . }}
+        {{ range .CurrentSection.Pages }}
+
+            {{ if eq . $currentPage }}
+
+            <li><a href="#">{{ .Title }}</a></li>
+
+            {{ else }}
+
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        {{ end }}
+    </ul>
+
+    <ul>
+        <li>
+            {{ with .Section }}
+            <a href="/{{ . | urlize }}/">{{ . | humanize | title }}</a>
+        </li>
+        <li><a href="/">Home</a></li>
+                
+            {{ end }}
+    </ul>
+
+</div>

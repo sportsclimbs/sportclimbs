@@ -1,13 +1,40 @@
-
 {{ define "main" }}
-    
 
 <h1>{{ .Site.Title }}</h1>
+
+<section class="content">
+    {{ .Content }}
+
+    <h2>Updates</h2>
+
+    <div class="updates">
+        {{ range where .Site.Pages "Type" "crag" }}
+
+        <p><b><a href="{{.Permalink }}">{{.Title}}</a></b> ({{ .Date.Format "02.01.2006" }}) {{ .Content | truncate 50 | plainify }}</p>
+
+        {{ end }}
+    </div>
+</section>
+
+<section class="images">
+    <figure>
+        <img src="/images/book-cover.jpg" alt="Book: Blood Sweat and Smears">
+        <figcaption>Out Now. You can order copies from <a href="https://cordee.co.uk/">https://cordee.co.uk/</a></figcaption>
+    </figure>
+</section>
+
 <section>
+    <div class="boltfund">
+        {{ range where .Site.Pages "Type" "boltfund" }}
+        {{ .Title }}
+        {{ .Content }}
+        {{ . }}
+        {{ end }}
+    </div>
     <ul>
-        {{ range .Site.Pages }}
+        {{ range .Site.Sections }}
         <li><a href="{{.Permalink}}">{{.Title}}</a></li>
-        
+
         {{ end }}
     </ul>
 </section>

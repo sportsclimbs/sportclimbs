@@ -1,0 +1,26 @@
+
+<div class="sidebar">
+    <ul class="craglist">
+        <li><a href="#">{{ .CurrentSection.Title }}</a></li>
+        {{ range .Pages }}
+        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{ end }}
+    </ul>
+
+    <ul>
+        {{ with .Params.nearby }}
+        {{ range . }}
+        <li><a href="../{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+    {{ end }}
+    </ul>
+    <ul>
+        <li>
+            {{ with .Section }}
+            <a href="/{{ . | urlize }}/">{{ . | humanize | title }}</a>
+        </li>
+        <li><a href="/">Home</a></li>
+                
+            {{ end }}
+    </ul>
+</div>

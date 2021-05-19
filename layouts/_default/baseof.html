@@ -2,10 +2,13 @@
 <html>
 {{- partial "head.html" . -}}
 
-<body>
-    <div class="container">
+<body class="{{ if .IsHome }}homepage{{ else }}
+{{ replace .Name " " "-" }}{{end }}">
+
+    <div class=" container">
         {{- partial "header.html" . -}}
         <main>
+            {{- partial "breadcrumbs.html" . -}}
             {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}

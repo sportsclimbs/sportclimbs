@@ -4,31 +4,12 @@
     <h1>{{.Title }} Area</h1>
     {{ .Content }}
 
+    <h2>All crags in this area</h2>
     {{ range .Pages }}
     <p><a href="{{.Permalink}}">{{ .Title }}</a></p>
 {{ end }}
 </div>
 
-<div class="sidebar">
-    <ul class="craglist">
-        {{ range .Pages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+{{ partial "list-sidebar" . }}
 
-        {{ end }}
-    </ul>
-
-    <hr>
-
-    {{ range .Sections.Reverse }}
-    <p>{{ .Title }} Area</p>
-        <ul>
-            {{ range .Pages }}
-            <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
-            {{ end }}
-        </ul>
-
-    {{ end }}
-
-
-</div>
 {{ end }}

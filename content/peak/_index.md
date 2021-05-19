@@ -8,4 +8,4 @@ description:
 weight: 2
 ---
 
-The Peak district has been divided into differen areas. These are:
+The Peak district has been divided into different areas. These are:
