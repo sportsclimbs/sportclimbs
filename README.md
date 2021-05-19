@@ -4,6 +4,10 @@ Should I use leaf bundles for pages. Each crag needs (mostly) several pages. Eac
 
 A different solution might be `static/images/peak/harpur_hill` or maybe `assets/images/peak/harpur_hill`.
 
+## Git remote
+
+Not pushing because of updates from?? presumably the CMS.
+
 ## Types of page
 
 1. Home page - uses index.html, should be a _Branch Bundle_ so how to have several content files? [2]
