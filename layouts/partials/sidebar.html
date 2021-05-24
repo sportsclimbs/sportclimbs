@@ -1,5 +1,9 @@
 
+{{/* This sidebar is used on Regular pages, from single.html */}}
+
+
 <div class="sidebar">
+    <div class="template_type">template: partials/sidebar.html</div>
     <ul>
         <li><a href="../index.html">{{ .CurrentSection.Title}}</a></li>
         {{ $currentPage := . }}

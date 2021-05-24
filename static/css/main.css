@@ -7,12 +7,14 @@
     --yellow: #F9D570;
     --white: #F2F2E8;
     --red: #A53131;
+    --midgrey: #555;
     --black: #222;
     --blue: #2E81D3;
 }
 body {
     font-family: 'segoe ui', sans-serif;
-    font-weight: 350;
+    font-weight: 400;
+    color: var(--black);
     background-color: var(--yellow);
     margin: 0;
 }
@@ -63,7 +65,7 @@ h2,
 h3 {
     line-height: 1.1;
     margin-bottom: 0.2em;
-    color: #555;
+    color: var(--midgrey, #555);
     }
 
     h1 {
@@ -147,3 +149,20 @@ footer .tech ul {
 /* .updates>p>p {
     display: inline;
 } */
+
+
+.template_type {
+    font-size: 80%;
+    color: #aaa;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --yellow: #2b2b2b;
+        --white: #323232;
+        --red: #A53131;
+        --midgrey: #827b7b;
+        --black: #d2d0d0;
+        --blue: #A47812;
+    }
+}

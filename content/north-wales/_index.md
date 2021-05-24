@@ -8,3 +8,6 @@ description:
 weight: 3
 ---
 
+North Wales has been a tradional climbing area for over 100 years.
+
+The sport climbing originated in the early 80s and Statement of Youth at Lower Pen Trwyn was probably the first fully bolted sport climbing in the UK.

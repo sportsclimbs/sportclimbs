@@ -1,5 +1,9 @@
+{{/* This is used by list pages from within list.html */}}
 
-<div class="sidebar">
+
+
+<div class="sidebar list-sidebar">
+    <div class="template_type">template: partials/list-sidebar.html</div>
     <ul class="craglist">
         <li><a href="#">{{ .CurrentSection.Title }}</a></li>
         {{ range .Pages }}
@@ -12,7 +16,7 @@
         {{ range . }}
         <li><a href="../{{ . | urlize }}">{{ . }}</a></li>
         {{ end }}
-    {{ end }}
+        {{ end }}
     </ul>
     <ul>
         <li>
@@ -20,7 +24,20 @@
             <a href="/{{ . | urlize }}/">{{ . | humanize | title }}</a>
         </li>
         <li><a href="/">Home</a></li>
-                
-            {{ end }}
+
+        {{ end }}
     </ul>
+
+    <hr>
+    {{ if .Params.locale }}
+
+    <ul>
+        {{ $loc := .Params.locale }}
+        {{ range where site.Pages "Params.locale" $loc }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+    <hr>
+    <p>{{ $loc }}</p>
+    {{ end }}
 </div>

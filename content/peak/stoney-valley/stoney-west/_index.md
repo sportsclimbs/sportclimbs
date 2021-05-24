@@ -6,6 +6,7 @@ layout: crag
 longlat: [-1.6741091, 53.2785901]
 map_label_text: Parking
 nearby: ["Horseshoe Quarry", "Darlton Quarry", "Darlton 2", "Horsethief Quarry"]
+locale: stoney
 ---
 
 ## Introduction:

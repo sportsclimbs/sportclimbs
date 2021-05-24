@@ -1,5 +1,5 @@
 ---
-title: "Stoney"
+title: "Stoney Valley"
 date: 2020-09-06T12:48:07+01:00
 type: area
 draft: false

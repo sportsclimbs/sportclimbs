@@ -5,4 +5,5 @@ draft: false
 type: 
 description:
 weight:
+locale:
 ---

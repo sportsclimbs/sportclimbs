@@ -4,9 +4,11 @@ Should I use leaf bundles for pages. Each crag needs (mostly) several pages. Eac
 
 A different solution might be `static/images/peak/harpur_hill` or maybe `assets/images/peak/harpur_hill`.
 
-## Git remote
+## To do
 
-Not pushing because of updates from?? presumably the CMS.
+1. How to range through a branch bundle / this seems to work `range .CurrentSection.Pages`  but doesn't include the _index page from the _index page.
+2. Related content? Needs to be working for crags nearby menu. Or just tag crags and list the tags or add an area to frontmatter and `range .Pages where "area" "stoney"`
+
 
 ## Types of page
 
@@ -16,11 +18,6 @@ Not pushing because of updates from?? presumably the CMS.
 4. crag section page with intro, access etc. uses `type: crag` to filter list pages in the updates section (and skip the area pages.)
 5. crag map page (not always)
 6. crag topo page/s
-
-## To do
-
-1. How to range through a branch bundle / this seems to work `range .CurrentSection.Pages`  but doesn't include the _index page from the _index page.
-2. Related content?
 
 ## Problem
 

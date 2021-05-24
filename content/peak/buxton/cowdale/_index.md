@@ -3,10 +3,10 @@ title: "Cowdale"
 date: 2020-09-06T12:26:39+01:00
 draft: false
 layout: crag
-latlong: [53.245868, -1.876463]
 longlat: [-1.876463, 53.245868]
 description:
 weight:
+locale: buxton
 ---
 
 > “Gary Gibson returned to the crag Chris Jackson drove past. Actually he drove past it twice: the second time was to check whether Gary had found the same crag.”—Mike Browell 1984

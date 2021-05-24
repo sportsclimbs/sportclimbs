@@ -1,18 +1,19 @@
 {{ define "main" }}
 
 <div class="content">
-<h1>{{.Title}}</h1>
+    <div class="template_type">template: layouts/_default/crag.html</div>
+    <h1>{{.Title}}</h1>
 
-{{ .Content }}
+    {{ .Content }}
 
-{{ if .Params.longlat }}
-{{ partial "map" . }}
-{{ end }}
+    {{ if .Params.longlat }}
+    {{ partial "map" . }}
+    {{ end }}
 
-{{ range .Site.Data.map.cd2 }}
+    {{/* range .Site.Data.map.cd2 }}
     <p>{{ . }}</p>
-{{ end }}
-</div> 
+    {{ end */}}
+</div>
 
 {{ partial "list-sidebar" . }}
 

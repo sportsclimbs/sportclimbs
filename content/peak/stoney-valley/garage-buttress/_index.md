@@ -3,6 +3,7 @@ title: "Garage Buttress"
 date: 2020-09-06T05:50:46+01:00
 draft: false
 type: crag
+locale: stoney
 ---
 
 ## Character
