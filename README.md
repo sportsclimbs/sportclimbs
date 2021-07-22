@@ -25,6 +25,12 @@ Trying to use data for the map coords
 
 > failed to load data: "T:\HTML-extras\sportclimbs-hugo-1\data\map\coordinates.yml:2:1": failed to unmarshal YAML: yaml: line 2: mapping values are not allowed in this context
 
+### CSS
+
+.container grid rows do not include the footer for unknown reasons (weird)
+
+SOLVED: the footer was positioned absolutely for some reason. Duh.
+
 ## Links
 
 1. [Nested sections](https://discourse.gohugo.io/t/fixed-nested-sections-dont-seem-to-render-with-range-pages/7083)

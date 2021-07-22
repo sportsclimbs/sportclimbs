@@ -15,7 +15,7 @@ And it came to pass that in the Nineteen Nineties in the never ending search for
 
 But all was not finished. Once the cat had been let out of the bag, Gary Gibson returned to fill a few of the remaining gaps and the puzzle is now complete.
 
-## Approaches:
+## Approach
 
 This is a little tricky because there is no right of access as described. However with caution no problems should arise. Either park in the car park of the Devonshire Arms (please ask permission if possible) or the large lay-by 1 mile out of Buxton on the right-hand side of the A6, an locate the water treatment plant directly below the crag. If no one is working there, cross the bridge and negotiate the fence, please handle with care, then proceed directly up the railway embankment onto the line. Look left for a clearway of trains, walk straight across and then right up onto the crag base.
 

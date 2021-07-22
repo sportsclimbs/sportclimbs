@@ -5,17 +5,17 @@
 <div class="sidebar">
     <div class="template_type">template: partials/sidebar.html</div>
     <ul>
-        <li><a href="../index.html">{{ .CurrentSection.Title}}</a></li>
+        <li><a href="../index.html" class="nav-item">{{ .CurrentSection.Title}}</a></li>
         {{ $currentPage := . }}
         {{ range .CurrentSection.Pages }}
 
             {{ if eq . $currentPage }}
 
-            <li><a href="#">{{ .Title }}</a></li>
+            <li><a href="#" class="nav-item">{{ .Title }}</a></li>
 
             {{ else }}
 
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            <li><a href="{{ .Permalink }}" class="nav-item">{{ .Title }}</a></li>
             {{ end }}
         {{ end }}
     </ul>
@@ -23,7 +23,7 @@
     <ul>
         <li>
             {{ with .Section }}
-            <a href="/{{ . | urlize }}/">{{ . | humanize | title }}</a>
+            <a href="/{{ . | urlize }}/" class="nav-item">{{ . | humanize | title }}</a>
         </li>
         <li><a href="/">Home</a></li>
                 

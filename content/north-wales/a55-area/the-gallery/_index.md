@@ -22,7 +22,7 @@ Its is thought that the main crag is worked out apart from the extreme left wing
 
 Routes are graded for on-sight ascents with no prior knowledge.
 
-## Approaches:
+## Approach
 
 Heading from Llandudno on the A55, pass through the Conwy Tunnel and pull up and park at a lay-by (with building) just before the Penmanbach tunnels. Cross over the duel carriageway (7b+ on-sight) and walk towards Bangor on the cycle-way/footpath for 5 minutes to below the crag. From Bangor, park in the lay-by after the Penmanmawr roundabout near to the bridge over the railway.
 

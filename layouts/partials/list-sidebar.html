@@ -5,25 +5,25 @@
 <div class="sidebar list-sidebar">
     <div class="template_type">template: partials/list-sidebar.html</div>
     <ul class="craglist">
-        <li><a href="#">{{ .CurrentSection.Title }}</a></li>
+        <li><a href="#" class="nav-item">{{ .CurrentSection.Title }}</a></li>
         {{ range .Pages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+        <li><a href="{{.Permalink}}" class="nav-item">{{.Title}}</a></li>
         {{ end }}
     </ul>
 
-    <ul>
+    <ul class="craglist">
         {{ with .Params.nearby }}
         {{ range . }}
-        <li><a href="../{{ . | urlize }}">{{ . }}</a></li>
+        <li><a href="../{{ . | urlize }}" class="nav-item">{{ . }}</a></li>
         {{ end }}
         {{ end }}
     </ul>
-    <ul>
+    <ul class="craglist">
         <li>
             {{ with .Section }}
-            <a href="/{{ . | urlize }}/">{{ . | humanize | title }}</a>
+            <a href="/{{ . | urlize }}/" class="nav-item">{{ . | humanize | title }}</a>
         </li>
-        <li><a href="/">Home</a></li>
+        <li><a href="/" class="nav-item">Home</a></li>
 
         {{ end }}
     </ul>
@@ -31,10 +31,10 @@
     <hr>
     {{ if .Params.locale }}
 
-    <ul>
+    <ul class="craglist">
         {{ $loc := .Params.locale }}
         {{ range where site.Pages "Params.locale" $loc }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li><a href="{{ .Permalink }}" class="nav-item">{{ .Title }}</a></li>
         {{ end }}
     </ul>
     <hr>

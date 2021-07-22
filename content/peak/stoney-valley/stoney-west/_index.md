@@ -13,7 +13,7 @@ locale: stoney
 
 Newly cleaned up with a number of new sports climbs as well as a re-cleaning of existing traditional routes should make this a popular venue.
 
-## Approaches:
+## Approach
 
 When heading west on the A623 pass through Stoney Middleton village, past the main crag on the right and past the turn off to Eyam and Stoney quarry. About 100 yards past the turn off look out for the entrance to Tarmac quarry on the left. Immediately after this is a parking spot on the left, opposite a wooden gate on the other side of the road.
 
