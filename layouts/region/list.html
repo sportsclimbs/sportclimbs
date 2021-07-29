@@ -3,8 +3,11 @@
 
 <div class="content">
     <div class="template_type">template: layouts/region/list.html</div>
-    <h1>{{.Title }} Region</h1>
     {{ .Content }}
+
+    {{ if .Params.longlat }}
+        {{ partial "map" . }}
+    {{ end }}
 
 {{ range .Pages }}
     <p><a href="{{.Permalink}}">{{ .Title }}</a></p>
@@ -12,6 +15,6 @@
 
 </div>
 
-{{ partial "list-sidebar" . }}
+{{ partial "new-sidebar" . }}
 
 {{ end }}

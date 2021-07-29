@@ -1,8 +1,9 @@
 baseURL = "https://sportclimbs.netlify.app/"
 languageCode = "en-us"
-title = "SportClimbs"
+title = "SportClimbs Test site"
 
 sectionPagesMenu = "main"
+enableGitInfo = true
 
 [related]
     [related.indices]

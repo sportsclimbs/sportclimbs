@@ -8,6 +8,9 @@
     <div class=" container">
         {{- partial "header.html" . -}}
         <main>
+            <h1>{{ .Title }} {{ with eq "Type" "region" }}
+                Region
+            {{ end }}</h1>
             {{- partial "breadcrumbs.html" . -}}
             {{- block "main" . }}{{- end }}
         </main>

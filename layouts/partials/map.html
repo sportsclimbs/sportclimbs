@@ -3,7 +3,7 @@
 <div id="map"></div>
 
 <script>
-var map = L.map('map').setView([{{ index .Params.longlat 1  }}, {{ index .Params.longlat 0 }}], 16);
+var map = L.map('map').setView([{{ index .Params.longlat 1  }}, {{ index .Params.longlat 0 }}], {{ with (index .Params.longlat 2) }}{{ . }}{{ else }}16{{ end }});
 
 
 

@@ -3,13 +3,12 @@
 
 <div class="content">
     <div class="template_type">template: layouts/_default/single.html</div>
-    <h1><small>{{.CurrentSection.Title}}</small><br> {{ .Title }}</h1>
     <time>{{ .Date.Format "Mon 02 Jan 06" }}</time>
 
     {{ .Content }}
 
 </div>
 
-{{ partial "sidebar" . }}
+{{ partial "new-sidebar" . }}
 
 {{ end }}

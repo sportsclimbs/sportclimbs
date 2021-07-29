@@ -4,6 +4,13 @@
 
 <div class="sidebar list-sidebar">
     <div class="template_type">template: partials/list-sidebar.html</div>
+
+    <ul>
+        {{ with .Parent }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+    
     <ul class="craglist">
         <li><a href="#" class="nav-item">{{ .CurrentSection.Title }}</a></li>
         {{ range .Pages }}

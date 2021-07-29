@@ -1,5 +1,6 @@
 ---
-title: "Home"
+title: "Sport Climbs UK"
+linktitle: Home
 date: 2020-09-24T18:26:37+01:00
 draft: false
 type:
