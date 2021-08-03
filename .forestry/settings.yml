@@ -10,11 +10,6 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: content/south-wales
-  label: South wales
-  create: all
-  match: "**/*"
-- type: directory
   path: content/peak
   label: Peak
   create: all
@@ -22,6 +17,11 @@ sections:
 - type: directory
   path: content/north-wales
   label: North wales
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/south-wales
+  label: South wales
   create: all
   match: "**/*"
 upload_dir: static/uploads
