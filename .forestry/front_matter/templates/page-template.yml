@@ -5,15 +5,18 @@ fields:
 - type: text
   name: title
   label: title
+  hidden: true
 - type: datetime
   name: date
   label: date
 - type: text
   name: latlong
   label: latlong
+  hidden: true
 - type: text
   name: description
   label: description
+  hidden: true
 - type: text
   name: weight
   label: weight
