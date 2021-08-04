@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ hugo.Generator }}
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%220%22 fill=%22%23f9d570%22></rect><path fill=%22%23a53131%22 d=%22M62.74 69.48L62.74 69.48Q62.74 65.08 59.63 62.63Q56.51 60.17 48.69 57.54Q40.86 54.91 35.89 52.46L35.89 52.46Q19.72 44.52 19.72 30.63L19.72 30.63Q19.72 23.72 23.75 18.44Q27.78 13.15 35.15 10.21Q42.52 7.27 51.71 7.27L51.71 7.27Q60.68 7.27 67.80 10.47Q74.91 13.67 78.85 19.58Q82.79 25.49 82.79 33.09L82.79 33.09L62.80 33.09Q62.80 28.01 59.68 25.21Q56.57 22.41 51.26 22.41L51.26 22.41Q45.89 22.41 42.77 24.78Q39.66 27.15 39.66 30.80L39.66 30.80Q39.66 34.00 43.09 36.60Q46.52 39.20 55.14 41.97Q63.77 44.74 69.31 47.94L69.31 47.94Q82.79 55.71 82.79 69.37L82.79 69.37Q82.79 80.28 74.57 86.51Q66.34 92.73 52.00 92.73L52.00 92.73Q41.89 92.73 33.69 89.10Q25.49 85.48 21.35 79.16Q17.21 72.85 17.21 64.63L17.21 64.63L37.32 64.63Q37.32 71.31 40.77 74.48Q44.23 77.65 52.00 77.65L52.00 77.65Q56.97 77.65 59.85 75.51Q62.74 73.37 62.74 69.48Z%22></path></svg>" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230b7afe%22></rect><path fill=%22%23ffffff%22 d=%22M34.03 82.81L34.03 72.73L46.63 72.73L46.63 39.65Q46.63 37.22 46.76 34.57L46.76 34.57L39.34 40.73Q38.62 41.32 37.90 41.56Q37.18 41.81 36.50 41.81L36.50 41.81Q35.33 41.81 34.41 41.29Q33.48 40.78 33.04 40.19L33.04 40.19L28.63 34.34L49.05 17.20L60.58 17.20L60.58 72.73L71.38 72.73L71.38 82.81L34.03 82.81Z%22></path></svg>" />
     {{ with .Params.longlat }}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -13,4 +13,12 @@
     <title>
         {{- if not .IsHome }} {{ .Title }} | {{ end }}{{ site.Title -}}
     </title>
+    {{ with .Params.css }}
+    <style>
+        {{ range . }}
+            {{ . | safeCSS }}
+        {{ end }}
+    </style>
+        
+    {{ end }}
 </head>

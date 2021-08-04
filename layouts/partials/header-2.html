@@ -1,0 +1,10 @@
+<header>
+    <nav>
+        <ul>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.regions }}
+            <li><a class="nav-item{{if or ($currentPage.IsMenuCurrent "regions" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ if eq $currentPage . }}#{{ else }}{{ .URL }}{{ end }}" title="{{ .Title }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

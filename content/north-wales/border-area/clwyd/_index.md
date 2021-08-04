@@ -8,3 +8,4 @@ description:
 weight:
 ---
 
+Clwyd is now under the border area of the North Wales Region.

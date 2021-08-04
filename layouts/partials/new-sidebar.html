@@ -1,9 +1,7 @@
 {{/* This is a new general sidebar for all pages thus replaceing the other sidebars */}}
 
 
-<div class="sidebar list-sidebar">
-    <div class="template_type">template: partials/new-sidebar.html</div>
-
+<nav class="sidebar list-sidebar">
     <ul class="craglist">
         <li>
             {{ $thisPage := . }}
@@ -15,10 +13,15 @@
             {{ end }}
             {{ end }}
         </li>
+        {{ $currentPage := . }}
         {{ range .CurrentSection.Pages }}
-        {{ if eq . $thisPage }}
+
+        {{ if eq . $currentPage }}
+
         <li><a href="#">{{ .LinkTitle }}</a></li>
+
         {{ else }}
+
         <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
         {{ end }}
         {{ end }}
@@ -27,7 +30,10 @@
 
 
 
-{{ $level := 0 }} {{/* Root of content directory. */}}
+
+
+    <ul class="craglist">
+        {{ $level := 0 }} {{/* Root of content directory. */}}
 {{ with .Parent }}
   {{ $level = 1 }}
   {{ with .Parent }}
@@ -41,7 +47,6 @@
   {{ end }}
 {{ end }}   
 
-    <ul class="craglist">
         <li>
 {{ with .Parent }}
     {{ if eq $level 4 }}
@@ -50,9 +55,16 @@
     <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
     {{ end }}
 {{ end }}
+        <li>
+            {{ $thispage := . }}
+            {{ with .FirstSection }}
+                {{ if ne $thispage . }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                {{ end }}
+            {{ end }}
         </li>
-
-        <li><a href="{{ .FirstSection.Permalink }}">{{ .FirstSection.LinkTitle }}</a></li>
-        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/">Home</a></li>
+            
     </ul>
-</div>
+</nav>

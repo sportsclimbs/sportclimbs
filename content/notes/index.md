@@ -7,12 +7,16 @@ draft: false
 type: 
 longlat: false
 description:
-weight:
+css:
+- "p>img {float: right; margin-left: 1em; width: min(100%, 400px);}"
 ---
 
 *NB When this page is set to `headless: true` it appears in the main menu above only from this page. See [the docs](https://gohugo.io/content-management/page-bundles/#headless-bundle)*
 
-## Basic heirarchy
+![Bandwidth per month](sportsclimbs-2021-08-03-cPanel-Bandwidth.png "Bandwidth usage for Sportsclimbs from December")
+{ .classit }
+
+## Basic heirarchy { .firstheading }
 
 Region > Area > Crag > (topos)
 
@@ -27,6 +31,7 @@ The main menu is areas:
 - S Wales
 - South Coast (or devon & dorset)
 - Scotland
+{.firstTryList}
 
 Other site sections or pages: 
 
@@ -93,13 +98,31 @@ Invite other climbers to contribute. If UKC can get volunteers then surely we ca
 Contribute info via a form and/or email. For more tech savvy use GitHub. For some a CMS / CMS's
 
 
-## Images
+## Images w Hugo
 
 Automate image sizing using Hugo and a shortcode using `srcset`. For this to work images need be either in a *page bundle* or stored in the `resources/assets/img` folder.
 
 A main page image could be added to the frontmatter: `pageimage: charlton-chestwig-on-revelations`
 
 Topo images could be added using a naming convention like `hh-racetrack-topo-1.jpg`. If stored in a leaf bundle it should be possible to easily. Or, in a leaf bundle they would just be called `topo-1.jpg` etc. though this would give no info about the file. Info could be stored in meta data
+
+## Images w/out Hugo
+
+Another way to store image is using an LFS (large file service). Worth noting that most of the site is images: 132mb out of a total of 135!!!
+
+Git has LFS incorporated to it and these services (at least Netlify) make use of that.
+
+There are several options:
+
+- Commit Media to Repository
+- Cloudinary (beta) - up to 40gb pcm last time I checked
+- Amazon S3
+- Netlify Large Media - up to 100gb pcm then £20 per additional 100gb (cheaper to sign up to Netlify Pro account for $19 and get 400gb pcm).
+- GitLab LFS - the two probs with with GitLab is it's less likely to get collabs and I don't think Forestry works with them.
+
+If bandwidth is a concern then maybe use Cloudflare with it's unlimited bandwidth instead. Other factors include build time. Currently the site takes around 15s at home. More pages etc. will increase this so let's say 30s. Two updates per day would be 30 minutes per month.
+
+**HOWEVER:** checking the 123-reg stats shows that the maximum used per month so far is only **6.81gb**. If the site/app becomes really successful this could jump up significantly but still a ways up to 100gb. If the site can be changed to a progressive web app that should limit bandwidth even more.
 
 ## Route grade and description
 
@@ -118,9 +141,24 @@ This would not be too hard to set up but a lot of work to change everything over
 
 ## Weather app
 
+{{< weather >}}
 Embed a weather app to every area or crag page. The area covered would need to be stated, perhaps in the frontmatter, otherwise using the section name.
 
 `weather: millers dale`
+
+### Some OK-ish widgets
+
+Generally these don't offer enough details. Hour by hour would be good.
+
+- Met Office - perhaps the most reliable, a known name, making it more useful
+- [Elfsight](https://elfsight.com/weather-widget/) - looks like one of the best. Highly customizable.
+- [Forecast.co.uk](https://www.forecast.co.uk/widget/) - custom colours, limited fonts? Small text
+- [Meteored](https://www.theweather.com/widget/) - custom colours and icons
+- [booked.net](https://www.booked.net/?page=weather_widget_customize&type=4&cityID=3540&cmetric=1#)
+
+### Or Open Weather API
+
+- [Open Weather Map API](https://openweathermap.org/) looks good but would be far more complicated, writing CSS, designing it, getting using icons etc. Probably at least a days work, maybe more. One for the future (not urgent)
 
 ## Add premade info boxes
 

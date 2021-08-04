@@ -5,8 +5,45 @@ title = "SportClimbs Test site"
 sectionPagesMenu = "main"
 enableGitInfo = true
 
+[markup]
+  [markup.goldmark.parser.attribute]
+  block = true
+  title = true
+
 [related]
     [related.indices]
       name = "nearby" # The name of the indice, same as Front Matter's .Param key.
       weight = 1 # We don't really need this, but omitting it would disable the indice.
       includeNewer = true # Here our relationship is timeless! This prevents Hugo from ignoring newer posts.
+
+[menu]
+
+  [[menu.regions]]
+    identifier = "notes"
+    name = "Notes"
+    url = "/notes/"
+    weight = "9"
+
+  [[menu.regions]]
+    identifier = "peak"
+    name = "Peak District"
+    url = "/peak/"
+    weight = "20"
+
+  [[menu.regions]]
+  identifier = "yorkshire"
+  name = "Yorkshire"
+  url = "/yorkshire/"
+  weight = "10"
+
+  [[menu.regions]]
+  identifier = "N Wales"
+  name = "North Wales"
+  url = "/north-wales/"
+  weight = "30"
+
+  [[menu.regions]]
+  identifier = "south wales"
+  name = "South Wales"
+  url = "/south-wales/"
+  weight = "40"
