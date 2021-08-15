@@ -16,3 +16,7 @@ Some ideas to be implmented are in the [notes section](/notes/)
 This site is one for information purposes only. The inclusion of a crag or a route on this site does not imply that you have the right to climb there. Descriptions of climbs and sites are recorded for historical purposes only. Great effort has gone into this site to ensure that grades and descriptions are correct, but as always, climbers must use judgment to ensure that difficulties are within their capabilities and accept the consequence of their decision. This site is in no way an attempt to encourage climbers to climb on the cliffs described within.
 
 The publisher of this site in no way accepts any responsibility for any errors it may contain, nor are liable for any injuries or damages arising from its use. Climbing is a dangerous pastime.
+
+## 5000 New Routes
+
+[5000 new routes](/5000/)

@@ -4,7 +4,7 @@ draft: false
 placeholder: false
 ---
 
-![](/img/peak/matlock/colehill-poser-lh.jpg)
+![Poser Wall LH at Colehill Quarry](/img/peak/matlock/colehill-poser-lh.jpg)
 
 **Posing Pouch (6a+)** tricky starting wall then easier
 
@@ -22,7 +22,7 @@ placeholder: false
 
 **5a. Pose On (6a)** right-hand branch off Out-a-Sight.
 
-![](/img/peak/matlock/colehill-above-30.jpg)
+![Colehill's hardest - Above 30](/img/peak/matlock/colehill-above-30.jpg)
 
 **6\. Above 30 (7b) \*** hard start and branches left from second 'ledge' to climb the very thin headwall. Easier for the tall.
 

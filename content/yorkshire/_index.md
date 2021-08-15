@@ -8,3 +8,4 @@ description:
 weight:
 ---
 
+{{< photos-2 >}}

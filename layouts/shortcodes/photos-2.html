@@ -1,0 +1,41 @@
+<script>
+baguetteBox.run('.gallery');
+
+</script>
+
+
+<div class="gallery">
+    <ul>
+        {{- with .Page.Resources.ByType "image" }}
+        {{ range . }}
+
+        {{ $thumbs := .Fill "200x200" }}
+        <li>
+            <a href="{{ .Name }}" data-caption="{{ with .Exif }}{{ .Date.Format "Jan 2006" }} AND {{ .Tags.ImageDescription }} {{ .Tags.CaptionAbstract }} - {{ end }}{{ replace (replace .Name ".jpg" "" ) "-" " " | title }}">
+                <img src="{{ $thumbs.RelPermalink }}" alt="{{ replace .Name "-" " " }}">
+            </a>
+        </li>
+        {{ end }}
+        {{ else }}
+        <p>No images for this page.</p>
+        {{- end -}}
+    </ul>
+</div>
+
+
+<script>
+window.addEventListener('load', function() {
+    baguetteBox.run('.gallery');
+});
+
+</script>
+
+<style>
+    .gallery li img {
+        filter: sepia(1);
+        transition: .4s;
+    }
+    .gallery li img:hover {
+        filter: sepia(0);
+    }
+</style>

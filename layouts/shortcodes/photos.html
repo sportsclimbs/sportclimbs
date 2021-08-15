@@ -1,0 +1,29 @@
+<script>
+baguetteBox.run('.gallery');
+
+</script>
+
+
+<div class="gallery">
+    <ul>
+        {{- with .Page.Resources.ByType "image" }}
+        {{ range . }}
+
+        <li>
+            <a href="{{ .Name }}" data-caption="{{ replace (replace .Name ".jpg" "" ) "-" " " | title }} AND {{ .Name }}">
+                <img src="{{ .RelPermalink }}" alt="{{ replace .Name "-" " " }}" style="max-width: 200px;">
+            </a>
+        </li>
+        {{ end }}
+        {{ else }}
+        <p>No images to display</p>
+        {{- end -}}
+    </ul>
+</div>
+
+<script>
+window.addEventListener('load', function() {
+    baguetteBox.run('.gallery');
+});
+
+</script>

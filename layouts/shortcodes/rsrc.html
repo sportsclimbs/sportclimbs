@@ -1,0 +1,49 @@
+
+{{/* experimenting with .Resources  */}}
+
+<div class="rsrc-container">
+
+<div class="cb">
+    {{ range .Page.Resources.Match "*/*topo*" }}
+        {{ .Name }}
+    {{ end }}
+    {{ range .Page.Resources.Match "*/*.yaml" }}
+        {{ .Content | markdownify }}
+    {{ end }}
+</div>
+    
+    <div class="cb">
+    
+        {{ range .Page.Resources.ByType "image" }}
+        <p><img src="{{ .RelPermalink }}" alt="{{ .Name }}" style="width: 300px; float: right;"></p>
+            <p>{{ .Name }}</p>
+        {{ end }}
+    </div>
+    
+    <div class="cb">
+    
+        {{ range .Page.Resources.Match "folder*/*" }}
+            <p>{{ . }}</p>
+        {{ end }}
+    </div>
+    
+    <div class="cb">
+    
+        {{ range .Page.Resources.Match "*/pears.*" }}
+        <h1>{{ .Name }}</h1>
+        {{ .Content | markdownify }}
+        {{ end }}
+    </div>
+</div>
+
+<style>
+    .rsrc-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .cb {
+        border: solid 1px;
+        padding: 0.5em;
+    }
+</style>

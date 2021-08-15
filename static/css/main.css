@@ -122,6 +122,13 @@ ul {
     padding: 0;
 }
 
+pre,
+code {
+    font-family: 'Courier New', monospace;
+    font-size: .85em;
+    font-weight: 500;
+    color: yellowgreen;
+}
 
 /* header nav ul {
     display: flex;
@@ -263,3 +270,11 @@ footer .tech ul {
     }
 }
 */
+
+/* ---------- PHOTO GALLERY ------------- */
+
+.gallery ul {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}

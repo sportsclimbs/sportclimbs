@@ -1,0 +1,18 @@
+Pears are good for you. This is a text file.
+
+So probably no formatting but let's see what happens.
+
+## Formatting text files
+
+It won't format but you can use the `markdownify` function. Using this you can write Markdown in a text file or get text from anywhere and have presented as markdown.
+
+As a minimum it's useful for separating paragraphs.
+
+Headings are also written with dashes like this
+
+
+Heading with dashes under
+-------------------
+
+### H3 Heading
+
