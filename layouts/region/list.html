@@ -5,7 +5,7 @@
     <div class="template_type">template: layouts/region/list.html</div>
     {{ .Content }}
 
-    {{ if .Params.longlat }}
+    {{ if .Params.map }}
         {{ partial "map" . }}
     {{ end }}
 

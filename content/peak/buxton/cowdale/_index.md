@@ -3,7 +3,9 @@ title: "Cowdale"
 date: 2020-09-06T12:26:39+01:00
 draft: false
 layout: crag
-longlat: [-1.876463, 53.245868]
+map: [53.245868, -1.876463]
+markers:
+- [53.245868, -1.876463, Cowdale]
 description:
 weight:
 locale: buxton

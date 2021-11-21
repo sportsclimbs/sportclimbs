@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+display_url: https://sportclimbs.uk
+site_url: https://sportclimbs.uk
+local_backend: true
+media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: sportclimbs
+    api_key: 826617453858452
+publish_mode: editorial_workflow
+collections:
+- name: "peak"
+  label: "Peak District"
+  folder: "content/peak"
+  create: true
+  editor:
+    preview: true
+  fields:
+  - {label: "Page Title", name: "title", widget: "string"}
+  - {label: "Link Title (only needed if the main title is long", name: "linktitle", widget: "string"}
+  - {label: "Subtitle (used if a crag has a second name)", name: "subtitle", widget: "string"}
+- name: "south-wales"
+  label: "South Wales"
+  folder: "content/south-wales"
+  create: true
+  editor:
+    preview: true
+  fields:
+  - {label: "Page Title", name: "title", widget: "string"}
+  - {label: "Link Title (only needed if the main title is long", name: "linktitle", widget: "string"}
+  - {label: "Subtitle (used if a crag has a second name)", name: "subtitle", widget: "string"}

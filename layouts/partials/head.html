@@ -2,10 +2,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ hugo.Generator }}
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230b7afe%22></rect><path fill=%22%23ffffff%22 d=%22M34.03 82.81L34.03 72.73L46.63 72.73L46.63 39.65Q46.63 37.22 46.76 34.57L46.76 34.57L39.34 40.73Q38.62 41.32 37.90 41.56Q37.18 41.81 36.50 41.81L36.50 41.81Q35.33 41.81 34.41 41.29Q33.48 40.78 33.04 40.19L33.04 40.19L28.63 34.34L49.05 17.20L60.58 17.20L60.58 72.73L71.38 72.73L71.38 82.81L34.03 82.81Z%22></path></svg>" />
-    {{ with .Params.longlat }}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ if .IsHome -}}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {{ end -}}
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230471f3%22></rect><path fill=%22%23fff%22 d=%22M58.70 32.07L58.70 82.12L41.34 82.12L41.34 32.07L25.65 32.07L25.65 17.88L74.35 17.88L74.35 32.07L58.70 32.07Z%22></path></svg>" />
+    {{ with .Params.map }}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     {{ end -}}

@@ -4,7 +4,10 @@ date: 2021-05-23T22:18:48+01:00
 draft: false
 type: 
 layout: crag
-longlat: [-3.20898, 53.17317]
+map: [53.17138, -3.20814, 16]
+markers:
+- [53.17317, -3.20898, Parking]
+- [53.16999, -3.21477, Devil's Gorge]
 description:
 weight:
 ---

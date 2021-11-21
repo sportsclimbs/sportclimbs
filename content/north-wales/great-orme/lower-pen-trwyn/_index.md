@@ -4,7 +4,9 @@ date: 2021-05-23T22:11:48+01:00
 draft: false
 type: 
 layout: crag
-longlat: [-3.83198, 53.33575, 15]
+map: [53.33575, -3.83198, 15]
+markers: 
+- [53.33575, -3.83198, Lower Pen Trwyn]
 description:
 weight:
 ---

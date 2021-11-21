@@ -1,21 +1,23 @@
-
+{{ if .Params.map }}
+    
 
 <div id="map"></div>
 
 <script>
-var map = L.map('map').setView([{{ index .Params.longlat 1  }}, {{ index .Params.longlat 0 }}], {{ with (index .Params.longlat 2) }}{{ . }}{{ else }}16{{ end }});
-
-
-
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-var marker = L.marker([{{ index .Params.longlat 1  }}, {{ index .Params.longlat 0 }}]).addTo(map)
-    .bindPopup("<b>{{ .Title }}</b><br />{{ with .Params.map_label_text }}{{ . }}{{ end }}").openPopup();
-
-
-
+    var map = L.map('map').setView([{{ index .Params.map 0  }}, {{ index .Params.map 1 }}], {{ with (index .Params.map 2) }}{{ . }}{{ else }}16{{ end }});
+    
+    
+    
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    
+    {{ range .Params.markers }}
+    
+    var marker = L.marker([{{ index . 0  }}, {{ index . 1 }}]).addTo(map)
+    .bindPopup("<b>{{ index . 2 }}</b>").openPopup();
+    
+    {{ end }}
 </script>
 
-    
+{{ end }}

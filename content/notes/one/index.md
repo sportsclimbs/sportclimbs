@@ -1,6 +1,6 @@
 ---
 title: Ideas for future updates
-linktitle: "Notes"
+linktitle: "Ideas"
 date: 2021-07-30T06:22:01+01:00
 headless: false
 draft: false

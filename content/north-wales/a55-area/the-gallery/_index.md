@@ -3,9 +3,9 @@ title: "The Gallery"
 date: 2021-05-23T13:05:05+01:00
 draft: false
 layout: crag
-longlat: [-3.869247, 53.286153]
-longlat: [-3.87149, 53.28646]
-map_label_text: Parking
+map: [ 53.286153, -3.869247]
+markers:
+- [53.28646, -3.87149, Parking]
 description:
 weight:
 ---

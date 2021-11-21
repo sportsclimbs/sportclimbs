@@ -46,9 +46,10 @@ body {
     font-weight: 300;
     color: var(--black);
     background-color: var(--yellow);
-    background-image: url(/images/layered-peaks-2.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image:  url(/img/test.svg), url(/images/layered-peaks-2.svg);
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
     background-attachment: fixed;
     margin: 0;
 }
