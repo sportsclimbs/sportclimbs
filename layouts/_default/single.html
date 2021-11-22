@@ -1,13 +1,13 @@
 {{ define "main" }}
 
 
-<div class="content">
+<section class="content {{- if .Params.columns }} columns{{ end }}">
     <div class="template_type">template: layouts/_default/single.html</div>
     <time>{{ .Date.Format "Mon 02 Jan 06" }}</time>
 
     {{ .Content }}
 
-</div>
+</section>
 
 {{ partial "new-sidebar" . }}
 

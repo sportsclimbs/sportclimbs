@@ -1,11 +1,11 @@
 ---
-title: "Lower Tier"
+title: Lower Tier
 date: 2020-09-06T13:40:18+01:00
 draft: false
-type: 
-latlong:
-description:
-weight:
+type: null
+latlong: null
+description: null
+weight: null
 ---
 
 
@@ -18,8 +18,6 @@ weight:
 
 4. Name not Known (6b)
    
-
-
 5. Name not Known (6b+) a common start with a left-hand finish
 
 6. Name not Known (6b+) the right-hand line is a little more contrived

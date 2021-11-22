@@ -1,11 +1,14 @@
 ---
-title: "Upper Tier Main"
-date: 2020-09-06T13:41:50+01:00
 draft: false
-type: 
-latlong:
-description:
-weight:
+date: 2020-09-06T13:41:50+01:00
+title: Upper Tier Main
+subtitle: Also upper tier JA
+weight: null
+type: null
+latlong: null
+map:
+  code: "map: [54.93, 20.5, goby]"
+description: null
 ---
 
 Project

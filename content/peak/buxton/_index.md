@@ -9,3 +9,7 @@ weight:
 ---
 
 The Buxton area has a number of great sport crags.
+
+## Tech:
+
+All crags are `_index.md` pages in separate crag folders)

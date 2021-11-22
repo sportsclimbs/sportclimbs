@@ -1,11 +1,11 @@
 ---
-title: "Topo"
+title: Max Buttress
 date: 2020-09-06T14:34:28+01:00
 draft: false
-type: 
-latlong:
-description:
-weight:
+type: null
+latlong: null
+description: null
+weight: null
 ---
 
 __Mix and Match (6a)__ left-hand of two warm-ups from part way up bank

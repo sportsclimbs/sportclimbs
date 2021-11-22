@@ -14,7 +14,7 @@
             {{ end }}
         </li>
         {{ $currentPage := . }}
-        {{ range .CurrentSection.Pages }}
+        {{ range .CurrentSection.Pages.ByTitle }}
 
         {{ if eq . $currentPage }}
 

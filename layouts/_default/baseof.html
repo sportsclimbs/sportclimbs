@@ -2,15 +2,21 @@
 <html>
 {{- partial "head.html" . -}}
 
-<body class="{{ if .IsHome }}homepage{{ else }}
-{{ replace .Name " " "-" }}{{end }}">
+<body class="{{ if .IsHome }}homepage{{ else }}{{ replace .Name " " "-" }}{{end }}">
+
+{{ if site.Params.snow }}
+  {{ if or (.IsHome) (eq .Section "north-wales") }}
+    {{ partial "snowflakes" . }}
+    
+  {{ end }}
+{{ end }}
 
     <div class=" container">
         {{- partial "header-2.html" . -}}
         <main>
             <h1>{{ .Title }} {{ with eq "Type" "region" }}
                 Region
-            {{ end }}</h1>
+            {{ end }}{{ with .Params.subtitle }}<br><small>{{ . }}</small>{{ end }}</h1>
             {{- partial "breadcrumbs.html" . -}}
             {{- block "main" . }}{{- end }}
         </main>

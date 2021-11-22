@@ -1,3 +1,5 @@
+@import "./snow";
+
 *,
 *::before,
 *::after {
@@ -90,6 +92,24 @@ main {
     column-gap: 45px;
 }
 
+section.columns {
+    columns: 2 350px;
+    column-gap: 2em;
+}
+section.columns p:first-of-type,
+section.columns .topo {
+    column-span: all;
+}
+section.columns p img {
+    max-width: 100%;
+}
+section.columns p:nth-of-type(2),
+section.columns .topo + p {
+    margin-top: 0;
+}
+section.columns p {
+    break-inside: avoid;
+}
 h1 {
     font-size: 3em;
     line-height: .1;
@@ -125,8 +145,8 @@ ul {
 
 pre,
 code {
-    font-family: 'Courier New', monospace;
-    font-size: .85em;
+    font-family: 'Azeret Mono', 'Courier New', monospace;
+    font-size: .8rem;
     font-weight: 500;
     color: yellowgreen;
 }
@@ -216,6 +236,7 @@ header nav a[href="#"],
 
 img {
     max-width: 100%;
+    border-radius: 15px;
 }
 
 /* --------- MAP ---------- */
@@ -250,6 +271,13 @@ footer .tech ul {
 
 .homepage figure {
     margin: 0;
+}
+
+.updates {
+    height: 500px;
+    overflow: auto;
+    padding-right: 1em;
+    // font-size: 0.8em;
 }
 
 /* .updates>p>p {

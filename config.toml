@@ -1,4 +1,4 @@
-baseURL = "https://sportclimbs.netlify.app/"
+baseURL = "https://test.sportclimbs.uk/"
 languageCode = "en-us"
 title = "SportClimbs Test site"
 
@@ -15,6 +15,9 @@ enableGitInfo = true
       name = "nearby" # The name of the indice, same as Front Matter's .Param key.
       weight = 1 # We don't really need this, but omitting it would disable the indice.
       includeNewer = true # Here our relationship is timeless! This prevents Hugo from ignoring newer posts.
+
+[params]
+  snow = true
 
 [menu]
 
