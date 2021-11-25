@@ -1,5 +1,9 @@
 ---
 title: CMS Notes
+date: 2021-11-25T06:50:59.000Z
+weight: null
+type: null
+description: null
 ---
 To use the CMS locally you only have to do two things:
 

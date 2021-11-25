@@ -143,8 +143,12 @@ ul {
     padding: 0;
 }
 
+.highlight {
+    display: inline-block;
+}
 pre,
 code {
+    padding: 0.5em 0;
     font-family: 'Azeret Mono', 'Courier New', monospace;
     font-size: .8rem;
     font-weight: 500;
