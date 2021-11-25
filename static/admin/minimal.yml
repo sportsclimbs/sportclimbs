@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+local_backend: true
+display_url: https://test.sportclimbs.uk
+site_url: https://test.sportclimbs.uk
+# media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
+# public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 8fd1a2c69b970e6ccb26
+collections:
+- name: "harpur-hill"
+  label: "Harpur Hill"
+  folder: "content/peak/buxton/harpur-hill"
+  create: false
+  editor:
+    preview: true
+  fields:
+  - {label: "Page Title", name: "title", widget: "string"}
+  - {label: "Link Title (only needed if the main title is too long for menus)", name: "linktitle", widget: "string", required: false}
+  - {label: "Subtitle (used if a crag has a second aka name)", name: "subtitle", widget: "string", required: false}
+  - {label: "Body", name: "body", widget: "markdown"}
+- name: "helicopter-quarry"
+  label: Helicopter Quarry
+  folder: "content/peak/matlock/helicopter-quarry"
+  # format: yaml-frontmatter
+  create: true
+  editor:
+    preview: true
+  fields:
+  - {label: "Page Title", name: "title", widget: "string"}
+  - {label: "Link Title (only needed if the main title is too long for menus)", name: "linktitle", widget: "string", required: false}
+  - {label: "Subtitle (used if a crag has a second aka name)", name: "subtitle", widget: "string", required: false}
+  - {label: "Body", name: "body", widget: "markdown"}
+  - {label: "Date", name: "date", widget: "datetime"}
+- name: "notes"
+  label: "Notes"
+  folder: "content/notes"
+  create: true
+  fields:
+    - label: "Page Title"
+      name: "title"
+      widget: "string"
+    - label: Time and Date
+      name: date
+      widget: datetime
+      description: Press the now button to change this date to today, right now
+    - label: "Body"
+      name: "body"
+      widget: "markdown"
