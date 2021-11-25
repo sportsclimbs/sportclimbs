@@ -7,10 +7,9 @@ site_url: https://test.sportclimbs.uk
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
 media_library:
-  name: cloudinary
+  name: uploadcare
   config:
-    cloud_name: sportclimbs
-    api_key: 826617453858452
+    publicKey: 8fd1a2c69b970e6ccb26
 publish_mode: editorial_workflow
 collections:
 - name: "harpur-hill"

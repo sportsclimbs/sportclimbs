@@ -2,10 +2,14 @@
         <footer>
             <div class="bmc">
                 <p>NB. BMC Participation Statement: The BMC recognize that climbing, hillwalking and mountaineering are activities with a danger of personal injury or death. Participants in these activities should be aware of, and accept, these risks, and be responsible for their own actions and involvement. For further information on any of these areas contact <a href="https://thebmc.co.uk/">The BMC</a>.</p>
+                <p>This site is the test site for <a href="https://sportclimbs.uk/">Sportclimbs.UK</a>. &copy;{{ now.Year }} | Now: {{ now.Format "15.04:05" }} | time: {{ .Date.Format "15.04:05 2 Jan" }} | {{ now.Format "Mon 2 Jan 06" }}<br>{{ .Date }}<br>
+                dateFormat: {{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}</p>
             </div>
             <div class="tech">
                 <ul>
-                    <li>Site updated at {{ .Site.LastChange.Format "15:04:05, 02 Jan 2006" }}</li>
+                    <li>Site updated at {{ .Site.LastChange.Format "15:04:05, 02 Jan 06" }}<br>
+                    Page was last modifed at {{ .Lastmod.Format "15:04:05, 02 Jan 06" }}
+                    </li>
                     <li>Hugo v.{{ hugo.Version }}</li>
                     <li>Section: {{.Section }}</li>
                     <li>Type: {{.Type }}</li>

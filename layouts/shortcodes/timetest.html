@@ -1,0 +1,47 @@
+
+
+
+<table class="timetest">
+    <tr>
+        <td>Now</td>
+        <td>{{ now.Format "15.04:05" }}</td>
+    </tr>
+    <tr>
+        <td>Using .Page.Date</td>
+        <td>{{ .Page.Date }}</td>
+    </tr>
+    <tr>
+        <td>.Page.Lastmod</td>
+        <td>{{ .Page.Lastmod }}</td>
+    </tr>
+    <tr>
+        <td>dateFormat "02 Jan 06 15:04 MST" .Page.Date<br>NB. <em>dateFormat</em> is an alias for time.Format.</td>
+        <td>{{ dateFormat "02 Jan 06 15:04 MST" .Page.Date }}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+    
+<style>
+    .timetest {
+        margin-block: 2em;
+        font-size: 0.8em;
+    }
+    .timetest td+td {
+        padding-left: 2em;
+        vertical-align: top;
+    }
+    .timetest td:first-child {
+        text-align: right;
+    }
+</style>
