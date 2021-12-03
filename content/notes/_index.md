@@ -14,3 +14,5 @@ This was a space for notes on the website but now these can be found on the <htt
 ## New
 
 It's snowing in [North Wales](/north-wales/)!!! This can be turned on or off in the main config file: `snow = true`. You can change where it snows in the `baseof.html` file.
+
+![logo](/images/sportclimbs.svg)

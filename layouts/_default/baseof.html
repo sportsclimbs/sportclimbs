@@ -14,9 +14,10 @@
     <div class=" container">
         {{- partial "header-2.html" . -}}
         <main>
-            <h1>{{ .Title }} {{ with eq "Type" "region" }}
-                Region
-            {{ end }}{{ with .Params.subtitle }}<br><small>{{ . }}</small>{{ end }}</h1>
+            <h1>{{ if .IsHome }}{{ .Site.Title }}
+                {{ else }}{{ .Title }} {{ if eq .Params.type "region" }} Region {{ end }}
+            {{ end }}
+            {{ with .Params.subtitle }}<br><small>{{ . }}</small>{{ end }}</h1>
             {{- partial "breadcrumbs.html" . -}}
             {{- block "main" . }}{{- end }}
         </main>

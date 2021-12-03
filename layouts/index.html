@@ -7,7 +7,7 @@
     <h2>Updates</h2>
 
     <div class="updates">
-        {{ range where .Site.Pages.ByDate.Reverse "Layout" "crag" }}
+        {{ range first 26 .Site.Pages.ByDate.Reverse }}
 
         <p><b><a href="{{.Permalink }}">{{.Title}}</a></b> ({{ .Date.Format "02.01.2006" }}) {{ .Content | truncate 50 | plainify }}</p>
 
