@@ -1,12 +1,12 @@
 ---
 title: Anarchy Sector
 subtitle: aka Lower Tier Left
-columns: true
+date: 2017-12-03
 draft: false
-placeholder: false
+columns: true
 ---
 
-![anarchy sector](https://res.cloudinary.com/sportclimbs/image/upload/c_scale,q_43,w_1200/v1637607204/peak/buxton/harpur-hill-anarchy-sector_n8idkw.jpg)
+![anarchy sector](/img/peak/buxton/harpur-hill-anarchy-sector_n8idkw.jpg)
 {.topo}
 
 

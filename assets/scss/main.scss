@@ -93,7 +93,7 @@ main {
 }
 
 section.columns {
-    columns: 2 350px;
+    columns: 2, 350px;
     column-gap: 2em;
 }
 section.columns p:first-of-type,

@@ -2,7 +2,7 @@
         <footer>
             <div class="bmc">
                 <p>This site is the test site for <a href="https://sportclimbs.uk/">Sportclimbs.UK</a>. &copy;{{ now.Year }}<br>
-                    This site currently has {{ len site.Pages }} pages.
+                    This site currently has {{ len site.Pages }} pages of which {{ len site.RegularPages }} are regular pages.
             </div>
             <div class="tech">
                 <ul>
@@ -10,7 +10,7 @@
                     Last rebuild time: {{ now.Format "15:04:05, 02 Jan 06" }}<br>
                     Site updated at {{ .Site.LastChange.Format "15:04:05, 02 Jan 06" }}<br>
                     LastChange {{ .Site.LastChange.Format "15:04:05, 02 Jan 06" }}<br>
-                    Page was last modifed at {{ .Lastmod.Format "15:04:05, 02 Jan 06" }}
+                    This page was last modifed at {{ .Lastmod.Format "15:04:05, 02 Jan 06" }}
                     </li>
                     <li>Hugo v.{{ hugo.Version }}</li>
                     <li>Section: {{.Section }}</li>

@@ -4,7 +4,7 @@ draft: false
 placeholder: false
 ---
 
-![](/img/peak/matlock/colehill-hamster-walls-1.jpg)
+![Hamster Walls](/img/peak/matlock/colehill-hamster-walls-1.jpg)
 
 **1\. The Booze Cruise (6b+) \*** a long line climbing the technical wall starting just left of the corner to finish via the fine white tower.
 

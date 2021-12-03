@@ -3,7 +3,7 @@ title: Papacy Sector
 draft: false
 placeholder: false
 ---
-![Papacy Buttress](https://res.cloudinary.com/sportclimbs/image/upload/v1637435817/peak/buxton/harpur-hill-anarchy-sector_nqgphj.jpg)
+![Papacy Buttress](/img/peak/buxton/harpur-hill-anarchy-sector_nqgphj.jpg)
 
 **1. Angleterre (5)** rib and shallow groove. Very pleasant climbing
 
