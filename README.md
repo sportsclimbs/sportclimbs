@@ -19,11 +19,13 @@ A different solution might be `static/images/peak/harpur_hill` or maybe `assets/
 5. crag map page (not always)
 6. crag topo page/s
 
-## Problem
+## Problems
 
-Trying to use data for the map coords
+1. Trying to use data for the map coords
 
 > failed to load data: "T:\HTML-extras\sportclimbs-hugo-1\data\map\coordinates.yml:2:1": failed to unmarshal YAML: yaml: line 2: mapping values are not allowed in this context
+
+2. Images show up which are not there: `img/buxton/hh-dark-side-right-central.jpg` - there is no `img/buxton` folder !!! (See HH Dark Side LH page.)
 
 ### CSS
 

@@ -1,8 +1,8 @@
 ---
-title: "Harpur Hill Long Wall"
+title: "Long Wall"
 date: 2021-11-22T22:45:21Z
 draft: false
-type: 
+type: adaptive
 longlat: false
 description:
 weight:

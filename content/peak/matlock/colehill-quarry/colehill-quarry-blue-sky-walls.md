@@ -2,6 +2,8 @@
 title: Blue Sky Walls
 draft: false
 placeholder: false
+type: adaptive
+date: 2021-12-10T09:44:07
 ---
 ![Blue Sky Walls](/img/peak/matlock/colehill-mining.jpg "The title shows up when the mouse cursor is over the image.")
 

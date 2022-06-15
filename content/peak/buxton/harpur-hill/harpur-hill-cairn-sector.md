@@ -1,6 +1,7 @@
 ---
 title: Cairn Sector
 draft: false
+type: adaptive
 placeholder: false
 ---
 

@@ -17,7 +17,7 @@ enableGitInfo = true
       includeNewer = true # Here our relationship is timeless! This prevents Hugo from ignoring newer posts.
 
 [params]
-  snow = true
+  snow = false
 
 [menu]
 
