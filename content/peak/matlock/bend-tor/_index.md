@@ -8,6 +8,7 @@ markers:
 placeholder: false
 ---
 
+
 ### Approach
 
 Bend Tor is in Matlock which is reached from the North or South via the A6. Free parking can be tricky, particularly on a busy summer weekend though the wiley climber can usually find somewhere on the outskirts of the town. There are several laybys with free parking on the A6 but these tend to fill up quickly. There is also free parking on the waste ground at the bottom of Lorry Park Quarry but access is via the little road to the council buildings and the gates to this are usually locked shut by around 5 - 5.30pm. The alternative is to _Pay and Display_ at around £6 per day.

@@ -12,7 +12,7 @@
                     LastChange {{ .Site.LastChange.Format "15:04:05, 02 Jan 06" }}<br>
                     This page was last modifed at {{ .Lastmod.Format "15:04:05, 02 Jan 06" }}
                     </li>
-                    <li>Hugo v.{{ hugo.Version }}</li>
+                    <li>Hugo version {{ hugo.Version }}<br>Go Version {{ hugo.GoVersion }}</li>
                     <li>Section: {{.Section }}</li>
                     <li>Type: {{.Type }}</li>
                     <li>Kind: {{.Kind }}</li>
